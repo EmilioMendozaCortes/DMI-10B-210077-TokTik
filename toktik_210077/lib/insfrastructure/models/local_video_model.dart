@@ -1,13 +1,25 @@
+import 'package:toktik_210077/domains/entities/video_post.dart';
+
 class LocalVideoModel {
-  final String caption;
+  final String name;
   final String videoUrl;
   final int likes;
-  final int videos;
+  final int views;
 
   LocalVideoModel({
-    required this.caption,
+    required this.name,
     required this.videoUrl,
     this.likes = 0,
-    this.videos = 0,
+    this.views = 0,
   });
+
+  factory LocalVideoModel.fromJson(Map<String, dynamic> json) =>
+    LocalVideoModel(
+      name: json['name'] ?? 'No name',
+      videoUrl: json['videoUrl'],
+      likes: json['likes'] ?? 0,
+      views: json['views'] ?? 0);
+
+  VideoPost toVideoPostEntity() => 
+    VideoPost(caption: name,videoUrl: videoUrl,likes: likes,views: views,);
 }
