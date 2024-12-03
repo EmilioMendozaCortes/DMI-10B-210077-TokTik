@@ -47,6 +47,36 @@ List<Map<String, dynamic>> videoPosts = [
     'likes': 342,
     'views': 3332,
   },
+  {
+    'name': 'Tranquilidad...',
+    'videoUrl': 'assets/videos/9.mp4',
+    'likes': 1644,
+    'views': 2344,
+  },
+  {
+    'name': 'Naturaleza...',
+    'videoUrl': 'assets/videos/10.mp4',
+    'likes': 5423,
+    'views': 4235,
+  },
+  {
+    'name': 'Relaxin',
+    'videoUrl': 'assets/videos/11.mp4',
+    'likes': 234,
+    'views': 1239,
+  },
+  {
+    'name': 'Un momento...',
+    'videoUrl': 'assets/videos/12.mp4',
+    'likes': 342,
+    'views': 774,
+  },
+  {
+    'name': 'Good Vibes',
+    'videoUrl': 'assets/videos/13.mp4',
+    'likes': 544,
+    'views': 664,
+  },
 
 
 ];
